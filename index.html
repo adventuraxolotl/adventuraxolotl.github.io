@@ -15,17 +15,17 @@
         </h1>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>FAQ</li>
-                <li>News</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#news">News</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section id="home">
             <h2>Home</h2>
         </section>
-        <section>
+        <section id="faq">
             <h2>FAQ</h2>
             <h3>What is Adventuraxlotl?</h3>
             <p>
@@ -51,6 +51,9 @@
                 The game contains an extensive manual with detailed profiles of every leader and how to please them.
             </p>
         </section>
+        <section id="faq">
+            <h2 name="news">News</h2>
+        </section>
     </main>
 </body>
 
@@ -71,7 +74,7 @@
         align-items: center;
         background-image: url("./adventuraxolotl-her50.png");
         background-repeat: no-repeat;
-        background-position: 50% 25%;
+        background-position: right 25%;
         background-size: cover;
     }
 
@@ -94,22 +97,49 @@
         display: flex;
         flex-direction: row;
         margin: 0;
-        gap: 2rem;
     }
 
     nav>ul>li {
+        position: relative;
         flex: 1;
         text-align: center;
         font-size: 1.5rem;
         font-weight: bold;
         transition: 1s;
         border: 1px white;
-        border-style: solid solid none solid;
-        background-color: #8AA1C3;
+        border-style: solid none;
+        margin: 0rem 2rem 2rem 2rem;
     }
 
-    nav>ul>li:hover {
-        background-color: black;
+    nav>ul>li::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: radial-gradient(rgba(255,255,255,1), rgba(255, 255, 255, 0.1));
+        z-index: -1;
+        transition: opacity 0.5s linear;
+        opacity: 0;
+    }
+
+    nav>ul>li:hover::before {
+        opacity: 1;
+    }
+
+    nav>ul>li>a {
+        width: 100%;
+        display: block;
+        padding: 0.5rem;
+
+        text-decoration: inherit;
+        color: inherit;
+    }
+
+    nav>ul>li>a:visited {
+        text-decoration: inherit;
+        color: inherit;
     }
 
     main {

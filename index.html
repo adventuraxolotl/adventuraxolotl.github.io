@@ -1,197 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventuraxolotl</title>
-    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
-</head>
-
-<body>
-    <header>
-        <h1>
-            <img src="logo.png" alt="Adventuraxolotl">
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#news">News</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Check out the inspiration for this project in this video by Oliver Lugg! (Dream and art by Narotiza)</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/KHqxiLckqIw?si=HqVIdsBPDJFAMEcd"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <p>The game is currently being written in the <a href="https://www.renpy.org/">Ren'Py Visual Novel Engine</a>.</p>
-            <p>Keep up with development in the #adventuraxolotl channel in the <a href="https://discord.gg/AVcU9w5gVW">Oliver Lugg
-                    discord server!</a></p>
-            <h3>Contributing</h3>
-            <p>This is a fan project - so if you want to help it come to fruition, please contact me via my <a
-                    href="https://github.com/BobSlim">github page</a>, or via the discord server above.</p>
-            <p>What kinds of work need to be done?</p>
-            <ul>
-                <li>Artists - character and bg.</li>
-                <li>Writers - there's a lot of characters to write for!</li>
-                <li>Composers - theme music per character</li>
-                <li>Ren'Py developers</li>
-            </ul>
-        </section>
-        <section id="faq">
-            <h2>FAQ</h2>
-            <h3>What is Adventuraxlotl?</h3>
-            <p>
-                Adventuraxolotl is a game of strategy and negotiation set in a world where amphibians rule. You must use
-                your powers of persuasion to guide your nation through complex socio-economic challanges, geopolitical
-                disputes, and all the great issues facing amphibian kind.
-            </p>
-            <p>
-                You win Adventuraxolotl by unifying the many factions of Lissamphibia. With so many slimy customers
-                around,
-                this is easier said than done!
-            </p>
-            <h3>Where can I get the game?</h3>
-            <p>
-                Links to purchase the game can be found on our home page.
-            </p>
-            <h3>Does this game contain a virus?</h3>
-            <p>
-                The game does not contain a virus! In fact, it contains (something).
-            </p>
-            <h3>Where can I learn how to play?</h3>
-            <p>
-                The game contains an extensive manual with detailed profiles of every leader and how to please them.
-            </p>
-        </section>
-        <section id="news">
-            <h2>News</h2>
-        </section>
-    </main>
-</body>
-
-<style>
-    body * {
-        box-sizing: border-box;
-    }
-
-    html {
-        --spacing-large: 1.5rem;
-        --spacing-medium: 1rem;
-        --spacing-small: 0.5rem;
-        --spacing-desktop-medium: 0rem;
-
-        --clr-theme: #8AA1C3;
-        --clr-theme-dark: #6471AA;
-        --clr-theme-darker: #485584;
-
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: var(--clr-theme-darker);
-        color: white;
-    }
-
-    @media only screen and (min-width: 600px) {
-        html {
-        --spacing-large: 2.5rem;
-        --spacing-medium: 1.5rem;
-        --spacing-small: 1rem;
-        --spacing-desktop-medium: 1.5rem;
-        }
-    }
-
-    body {
-        margin: 0;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-image: url("./adventuraxolotl-her50.png");
-        background-repeat: no-repeat;
-        background-position: right 25%;
-        background-size: cover;
-    }
-
-    header>h1 {
-        margin-bottom: 0;
-    }
-
-    header>h1>img {
-        max-height: 5rem;
-        max-width: 100%;
-        height: auto;
-        
-    }
-
-    nav {
-        max-width: 140ch;
-        width: 100%;
-    }
-
-    nav>ul {
-        padding-left: 0;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        justify-content: space-around;
-    }
-
-    nav>ul>li {
-        position: relative;
-        flex: 1;
-        text-align: center;
-        font-size: var(--spacing-medium);
-        font-weight: bold;
-        transition: 1s;
-        border: 1px white;
-        border-style: solid none;
-        margin-bottom: var(--spacing-desktop-medium);
-        max-width: 15rem;
-    }
-
-    nav>ul>li::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: radial-gradient(rgba(255,255,255,1), rgba(255, 255, 255, 0.1));
-        z-index: -1;
-        transition: opacity 0.5s linear;
-        opacity: 0;
-    }
-
-    nav>ul>li:hover::before {
-        opacity: 1;
-    }
-
-    nav>ul>li>a {
-        width: 100%;
-        display: block;
-        padding: var(--spacing-small);
-
-        text-decoration: inherit;
-        color: inherit;
-    }
-
-    nav>ul>li>a:visited {
-        text-decoration: inherit;
-        color: inherit;
-    }
-
-    main {
-        margin: auto;
-        max-width: 75ch;
-        padding: var(--spacing-small);
-    }
-</style>
-
-</html>
+---
+layout: default
+---
+<section id="home">
+    <h2>Home</h2>
+    <p>Check out the inspiration for this project in this video by Oliver Lugg! (Dream and art by Narotiza)</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KHqxiLckqIw?si=HqVIdsBPDJFAMEcd"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <p>The game is currently being written in the <a href="https://www.renpy.org/">Ren'Py Visual Novel Engine</a>.</p>
+    <p>Keep up with development in the #adventuraxolotl channel in the <a href="https://discord.gg/AVcU9w5gVW">Oliver Lugg
+            discord server!</a></p>
+    <h3>Contributing</h3>
+    <p>This is a fan project - so if you want to help it come to fruition, please contact me via my <a
+            href="https://github.com/BobSlim">github page</a>, or via the discord server above.</p>
+    <p>What kinds of work need to be done?</p>
+    <ul>
+        <li>Artists - character and bg.</li>
+        <li>Writers - there's a lot of characters to write for!</li>
+        <li>Composers - theme music per character</li>
+        <li>Ren'Py developers</li>
+    </ul>
+</section>
+<section id="faq">
+    <h2>FAQ</h2>
+    <h3>What is Adventuraxlotl?</h3>
+    <p>
+        Adventuraxolotl is a game of strategy and negotiation set in a world where amphibians rule. You must use
+        your powers of persuasion to guide your nation through complex socio-economic challanges, geopolitical
+        disputes, and all the great issues facing amphibian kind.
+    </p>
+    <p>
+        You win Adventuraxolotl by unifying the many factions of Lissamphibia. With so many slimy customers
+        around,
+        this is easier said than done!
+    </p>
+    <h3>Where can I get the game?</h3>
+    <p>
+        Currently the game is in development - aiming for a demo release before full production!
+    </p>
+    <h3>Does this game contain a virus?</h3>
+    <p>
+        The game does not contain a virus! In fact, it contains (something).
+    </p>
+    <h3>Where can I learn how to play?</h3>
+    <p>
+        The game contains an extensive manual with detailed profiles of every leader and how to please them.
+    </p>
+</section>

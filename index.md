@@ -3,12 +3,11 @@ layout: default
 ---
 # Adventuraxolotl
 
-Check out the inspiration for this project in this video by Oliver Lugg! (Dream and art by Narotiza)
+Check out the inspiration for this project in this video by [Oliver Lugg](https://oliverlugg.com/)and [Narotiza](https://nine-moonbeams.neocities.org/)
 
 The game is currently being written in the [Ren'Py Visual Novel Engine](https://www.renpy.org/).
 
 Keep up with development in the #adventuraxolotl channel in the [Oliver Lugg discord server!](https://discord.gg/AVcU9w5gVW)
-
 ## Contributing
 
 This is a fan project - so if you want to help it come to fruition, please contact me via my [github
@@ -20,13 +19,10 @@ What kinds of work need to be done?
 * Writers - there's a lot of characters to write for!
 * Composers - theme music per character
 * Ren'Py developers
-
 ## FAQ
 ### What is Adventuraxlotl?
 
-Adventuraxolotl is a game of strategy and negotiation set in a world where amphibians rule. You must use
-
-your powers of persuasion to guide your nation through complex socio-economic challanges, geopolitical disputes, and all the great issues facing amphibian kind.
+Adventuraxolotl is a game of strategy and negotiation set in a world where amphibians rule. You must use your powers of persuasion to guide your nation through complex socio-economic challanges, geopolitical disputes, and all the great issues facing amphibian kind.
 
 You win Adventuraxolotl by unifying the many factions of Lissamphibia. With so many slimy customers around, this is easier said than done!
 

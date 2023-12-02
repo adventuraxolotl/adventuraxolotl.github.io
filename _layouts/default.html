@@ -10,13 +10,11 @@
 </head>
 
 <body>
-    <header>
-        <h1>
-            <img src="/assets/styles/global.css" alt="Adventuraxolotl">
-        </h1>
+    <header class="rootHeader">
+        <img class="rootHeader_logo" src="/assets/img/logo.png" alt="Adventuraxolotl">
         <nav>
             <ul>
-                <li><a href="/#home">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="/#faq">FAQ</a></li>
                 <li><a href="/news">News</a></li>
                 <li><a href="/world">World</a></li>
@@ -27,5 +25,84 @@
         {{ content }}
     </main>
 </body>
+
+<style>
+    
+.rootHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/assets/img/adventuraxolotl-her50.png");
+    background-repeat: no-repeat;
+    background-position: right 25%;
+    background-size: cover;
+}
+
+.rootHeader_logo {
+    margin-bottom: 0;
+    max-height: 5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    max-width: 140ch;
+    width: 100%;
+}
+
+nav>ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-around;
+}
+
+nav>ul>li {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    font-size: var(--spacing-medium);
+    font-weight: bold;
+    transition: 1s;
+    border: 1px white;
+    border-style: solid none;
+    margin-bottom: var(--spacing-desktop-medium);
+    max-width: 15rem;
+}
+
+nav>ul>li::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1));
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+nav>ul>li:hover::before {
+    opacity: 1;
+}
+
+nav>ul>li>a {
+    width: 100%;
+    display: block;
+    padding: var(--spacing-small);
+
+    text-decoration: inherit;
+    color: inherit;
+}
+
+nav>ul>li>a:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+</style>
 
 </html>
